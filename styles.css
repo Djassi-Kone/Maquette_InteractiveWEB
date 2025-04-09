@@ -1,0 +1,272 @@
+:root{
+    --bgcolor: rgb(46, 44, 44);
+    --bgprof: gba(189, 176, 176, 0.952);
+}
+/* La police de tout le document */
+body{
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+
+/* La page d'accueil */
+#corpsi{
+    display:inline-flex;
+    background-color: grey;
+    overflow: hidden;
+    text-align: center;
+    font-size: 1.3em;
+}
+#page{
+    background-color: grey;
+    width: 100vw;
+    margin: 0px;
+}
+#profil{
+    background-color: darkgray;
+    width: 100vw;
+    height: 150px;
+    padding: 10px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+#contenu{
+    background-color: rgba(121, 138, 154, 0.514);
+    padding-top: 100px;
+    width: 100vw;
+    height: 100vh;
+    margin-left: 0px;
+}
+.h{
+    margin-top: 40px;
+}
+#imgac{
+    width: 30%;
+    height: 30%;
+    border-radius: 30px 30px 30px 30px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+button{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    padding: 15px;
+    margin-top: 30px;
+    background-color: black;
+    color: azure;
+    border-radius: 50px 50px 50px 50px;
+    cursor: pointer;
+    
+}
+button:hover{
+    background-color: rgba(10, 10, 61, 0.572);
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+/* Le CV */
+/* Style du frame A4 */
+.frameA4{
+    display: flex;
+    width: 595px;
+    margin:0 auto ;
+    height: 842px;
+    background-color: rgb(235, 235, 224);
+    border: 10px;
+    text-align: center;
+}
+/* Style du coté gauche */
+.frameA4 .cotegauche{
+    flex-direction: column;
+    margin-left: 10px;
+    width: 300px;
+    height: 842px;
+    background-color: var(--bgprof);
+}
+/* Style du profil */
+.frameA4 .cotegauche .profil{
+    width: 190px;
+    height: 260px;
+    color: white;
+    text-align: center;
+    margin-top: -20px;
+    border-bottom-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+    background-color: var(--bgcolor);
+}
+.name{padding-top: 7px;}
+.status{padding-top: -7px;
+        font-size: small;}
+/* Style de la photo */
+.frameA4 .cotegauche .profil .imageprofil{
+    width: 160px;
+    height: 150px;
+    border-radius: 100px;
+    margin-top: -1px;
+}
+/* Style de l'adresse*/
+.adresse{text-align: left;}
+.adresse ul{
+    list-style: none;
+    margin: -14px;
+} 
+.adresse ul li a {
+    justify-content: left;
+    margin-top: 150px;
+    text-decoration: none;
+    color: black;
+    font-size: small;
+}
+/* Style de l'éducation */
+.frameA4 .cotegauche .education{
+    padding-top: 40px;
+    width: 170px;
+    height: 423px;
+    color: white;
+    margin-top: 35px;
+    margin-left: 10px;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    background-color: var(--bgcolor);
+}
+.education i{
+    color: white;
+}
+i{
+    color: var(--bgcolor);
+}
+/* Style des titres*/
+.titrep{
+    padding: -40%;
+    
+}
+.titren{
+    margin-bottom: 0px;
+    padding-left: 10px ;
+    text-align: left;
+}
+.titreu{
+    margin-bottom: -2px;
+    padding-left: 10px ;
+    text-align: left;
+    
+}
+.titre{
+    padding: -20px;
+    padding-left: 10px;
+    text-align: left;
+    font-size: x-small;
+}
+.para{
+    padding: 0px 15px 2px 15px;
+    text-align: justify;
+    font-size: small;
+}
+.exp1{
+    margin-left: -45px;
+}
+.exp2{
+    margin-left: -130px;
+}
+.exp3{
+    margin-left: -10px;
+}
+.exp1_1{
+    position: relative;
+    margin-left: -227px;
+    font-size: x-small;
+    margin-top: -3%;
+}
+.exp1_2{
+    position: relative;
+    margin-left: -114px;
+    font-size: x-small;
+    margin-top: -3%;
+}
+.exp1_3{
+    position: relative;
+    margin-left: -144px;
+    font-size: x-small;
+    margin-top: -3%;
+}
+.date{
+    position: relative;
+    top: -11px;
+    left: 227px;
+}
+.date1{
+    position: relative;
+    top: -11px;
+    left: 175px;
+}
+.date2{
+    position: relative;
+    top: -11px;
+    left: 221px;
+}
+.boite{
+    display: flex;
+}
+.boite .parent{
+    height: 5px;
+    width: 60px;
+    border: 10px;
+    background-color: white;
+    border-radius: 30px;
+    margin-left: 30px;
+    flex-direction: row;
+}
+.boite .parent .enfant{
+    height: 5px;
+    width: 30px;
+    background-color: var(--bgcolor);
+    border-radius: 50px;
+}
+.boite .parent .enfant1{
+    height: 5px;
+    width: 20px;
+    background-color: var(--bgcolor);
+    border-radius: 50px;
+}
+.boite .parent .enfant2{
+    height: 5px;
+    width: 45px;
+    background-color: var(--bgcolor);
+    border-radius: 50px;
+}
+.boite .parent .enfant3{
+    height: 5px;
+    width: 35px;
+    background-color: var(--bgcolor);
+    border-radius: 50px;
+}
+.boite .parent .enfant4{
+    height: 5px;
+    width: 30px;
+    background-color: var(--bgcolor);
+    border-radius: 50px;
+}
+.les6{
+    display: flex;
+}
+.comp1{
+    margin-left: 15px;
+    margin-top: -5px;
+    list-style-type: disc;
+}
+.langue{
+    margin-top: -20px;
+}
+.loisir{
+    margin-top: -20px;
+}
+.les3{display: flex;}
+.lan1{
+    margin-left: 15px;
+    margin-top: -5px;
+    list-style-type: disc;
+}
+.loi1{
+    margin-left: 12px; 
+    margin-top: -15px;
+    list-style-type: disc;
+}
+.les3l{display: flex;}
+.grandtitre{
+    text-align: left;
+    margin-left: 15px;
+}
