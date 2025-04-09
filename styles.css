@@ -1,6 +1,6 @@
 :root{
     --bgcolor: rgb(46, 44, 44);
-    --bgprof: gba(189, 176, 176, 0.952);
+    /* --bgprof: gba(189, 176, 176, 0.952); */
 }
 /* La police de tout le document */
 body{
@@ -75,7 +75,7 @@ button:hover{
     margin-left: 10px;
     width: 300px;
     height: 842px;
-    background-color: var(--bgprof);
+    background-color: gba(189, 176, 176, 0.952);
 }
 /* Style du profil */
 .frameA4 .cotegauche .profil{
